@@ -1,0 +1,54 @@
+ALGORITHM READ_SENTENCE
+VAR
+tsc:= STING;
+nbs, nbv, nbc:= INTEGER;
+BEGIN
+nbc:=0;
+nbc:=1;
+nbv:=0;
+WRITE("gomycode.")
+READ("gomycode.")
+REPEAT
+    IF (tsc[nbc]="") THEN
+    nbs:=nbs+1;
+    END_IF
+    IF (tsc[nbc]in ["a","e","u","i","o","y","A","E","U","I","O","Y"])THEN
+    nbv:=nbv+1;
+    END_IF
+    nbc:=nbc+1;
+UNTIL (tsc[nbc]=".")
+WRITE("le nombre des caractères est"nbc+1)
+WRITE("le nombre des mots est"nbs)
+WRITE("le nombre des voyelles est"nbv)
+END
+
+
+ALGORITHM COMPARE_ARRAYS( sum: INTEGER, outup: INTEGER):INTEGER;
+VAR
+n:INTEGER;
+i1:INTEGER;
+i2:INTEGER;
+Set1:INTEGER;
+Set2:INTEGER;
+BEGIN
+Set1:=[];
+Set2:=[];
+READ(n);
+WHILE (n=0) and (sum=0)DO 
+REPEAT
+IF (i1≠i2 IN (length Set1-1))THEN 
+n:=i1;
+sum:=n+i1;
+END_IF
+UNTIL[(length Set1-1)AND(length Seti2-1)]
+WRITE("la sortie est"sum);
+WRITE("les éléménts distincts sont"outup);
+END_WHILE
+END
+
+
+
+
+
+
+
